@@ -6,7 +6,7 @@ A lightweight Promise-based wrapper and helper for node Redis.
 
 **Currently undergoing testing, probably shouldn't use :)**
 
-#Initialization
+# Initialization
 
 ```sh
 npm install node-redis-helper
@@ -22,11 +22,11 @@ redis = new RedisHelper(redisOptions);
 
 ```
 
-#Fetch a client
+# Fetch a client
 
-node-redis-helper Tries to be a 
+node-redis-helper Tries to be a
 
-```
+```js
 redis.client()
 	.then(function(client){
 		//use client like normal
@@ -37,11 +37,11 @@ redis.client()
 	})
 ```
 
-#Client Operations
+# Client Operations
 
 Please check out [Node Redis](https://www.npmjs.com/package/redis) for a full list of operations.
 
-#To Do
+# To Do
 
 * Connection Pooling
 * Evaluate IO Redis

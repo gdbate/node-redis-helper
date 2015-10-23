@@ -21,21 +21,17 @@
 	RedisHelper.prototype.connect = function() {
 		var self = this;
 		return Q.promise(function(resolve, reject) {
-			debug('Connecting');
 			self.connection = Redis.createClient(self.options);
 			if (self.options.password)
-				debug('Authorizing');
 			self.connection.auth(self.options.password, function(err) {
 				self.connection.end();
 				self.connected = false;
 				if (err) throw err;
 			});
 			self.connection.on('end', function() {
-				debug('Connection Ended');
 				self.connected = false;
 			});
 			self.connection.on('error', function(err) {
-				debug('Query Error [' + err.message + ']');
 				self.connection.end();
 				self.connected = false;
 			});
