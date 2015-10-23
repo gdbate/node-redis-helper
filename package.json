@@ -1,6 +1,6 @@
 {
   "name": "node-redis-helper",
-  "version": "0.1.1",
+  "version": "0.1.2",
 	"description": "A lightweight Promise-based wrapper and helper for node Redis.",
 	"homepage": "https://github.com/gdbate/node-redis-helper",
 	"author": "Greg Bate <gdbate@gmail.com> (https://github.com/gdbate)",
