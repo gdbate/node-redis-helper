@@ -1,0 +1,36 @@
+{
+  "name": "node-redis-helper",
+  "version": "0.1.1",
+	"description": "A lightweight Promise-based wrapper and helper for node Redis.",
+	"homepage": "https://github.com/gdbate/node-redis-helper",
+	"author": "Greg Bate <gdbate@gmail.com> (https://github.com/gdbate)",
+	"keywords": [
+		"node",
+		"npm",
+		"redis",
+		"node-redis",
+		"wrapper",
+		"helper",
+		"node_redis",
+		"async",
+		"promise",
+		"defer",
+		"deferred"
+	],
+	"contributors": [
+		"Greg Bate <gdbate@gmail.com> (https://github.com/gdbate)"
+	],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/gdbate/node-redis-helper.git"
+  },
+  "bugs": {
+    "mail": "gdbate@gmail.com",
+    "url": "http://github.com/gdbate/node-redis-helper/issues"
+  },
+	"license": "MIT",
+  "dependencies": {
+    "redis": "~2.2.5",
+    "q": "~1.4.1"
+  }
+}
