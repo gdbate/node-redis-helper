@@ -35,14 +35,16 @@
 				self.connection.end();
 				self.connected = false;
 			});
-			return self.connection;
+			resolve(self.connection);
 		});
 	};
 
 	RedisHelper.prototype.client = function() {
 		if (!this.connected) {
+			console.log('connected');
 			return this.connect();
 		} else {
+			console.log('connecting');
 			var self = this;
 			return Q.promise(function(resolve, reject) {
 				resolve(self.connection);
